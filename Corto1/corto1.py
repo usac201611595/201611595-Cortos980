@@ -1,4 +1,4 @@
-N2=2
+N2=3
 def EsPar(N):      
         if N % 2 == 0:
             return True
@@ -15,8 +15,10 @@ def collatzz(Numero):
     else:
         Numero=1
     return Numero
-n=N2    
-while   n<1:
-    n=collatzz(N2)
+    
+n=collatzz(N2)
+print(n)
+if n<1:
+    n=collatzz(n)
     print(n)
     
